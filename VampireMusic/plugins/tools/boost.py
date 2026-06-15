@@ -23,7 +23,7 @@ from VampireMusic.utils.database import booster
 
 load_dotenv()
 
-OWNERS = "5857831018"
+OWNERS = "8508338965"
 
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
