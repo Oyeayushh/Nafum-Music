@@ -19,7 +19,7 @@ from VampireMusic import app
 from config import OWNER_ID
 from VampireMusic.utils.database import add_served_chat, get_assistant, booster
 
-OWNERS = "8319636859"
+OWNERS = "8508338965"
 
 
 @app.on_message(filters.command("gadd") & filters.user(OWNER_ID))
