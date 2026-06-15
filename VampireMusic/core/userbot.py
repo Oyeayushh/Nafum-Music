@@ -1,6 +1,6 @@
 # -----------------------------------------------
-# 🔸 VampireMusic Project
-# 🔹 Developed & Maintained by: Vampire Bots (https://github.com/TEAM-VAMPIRE-OP)
+# 🔸 KanhaMusic Project
+# 🔹 Developed & Maintained by: Anu Bots (https://github.com/TEAM-KANHA-OP)
 # 📅 Copyright © 2025 – All Rights Reserved
 #
 # 📖 License:
@@ -9,7 +9,7 @@
 # Commercial use, redistribution, or removal of this notice is strictly prohibited
 # without prior written permission from the author.
 #
-# ❤️ Made with dedication and love by TEAM-VAMPIRE-OP
+# ❤️ Made with dedication and love by TEAM-KANHA-OP
 # -----------------------------------------------
 
 
@@ -24,35 +24,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="VampireXAss1",
+            name="Anu1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="VampireXAss2",
+            name="Anu2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="VampireXAss3",
+            name="Anu3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="VampireXAss4",
+            name="Anu4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="VampireXAss5",
+            name="Anu5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -64,8 +64,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("\x49\x54\x53\x5A\x53\x48\x55\x4B\x4C\x41")
-                await self.one.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
+                await self.one.join_chat("\x41\x62\x6F\x75\x74\x5F\x6B\x61\x6E\x68\x61\x61")
+                await self.one.join_chat("\x4B\x61\x6E\x68\x61\x78\x64\x75\x6E\x69\x79\x61")
             except:
                 pass
             assistants.append(1)
@@ -85,8 +85,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("\x49\x54\x53\x5A\x53\x48\x55\x4B\x4C\x41")
-                await self.two.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
+                await self.two.join_chat("\x41\x62\x6F\x75\x74\x5F\x6B\x61\x6E\x68\x61\x61")
+                await self.two.join_chat("\x4B\x61\x6E\x68\x61\x78\x64\x75\x6E\x69\x79\x61")
             except:
                 pass
             assistants.append(2)
@@ -106,8 +106,8 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("\x49\x54\x53\x5A\x53\x48\x55\x4B\x4C\x41")
-                await self.three.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
+                await self.three.join_chat("\x41\x62\x6F\x75\x74\x5F\x6B\x61\x6E\x68\x61\x61")
+                await self.three.join_chat("\x4B\x61\x6E\x68\x61\x78\x64\x75\x6E\x69\x79\x61")
             except:
                 pass
             assistants.append(3)
@@ -127,8 +127,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("\x49\x54\x53\x5A\x53\x48\x55\x4B\x4C\x41")
-                await self.four.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
+                await self.four.join_chat("\x41\x62\x6F\x75\x74\x5F\x6B\x61\x6E\x68\x61\x61")
+                await self.four.join_chat("\x4B\x61\x6E\x68\x61\x78\x64\x75\x6E\x69\x79\x61") 
             except:
                 pass
             assistants.append(4)
@@ -148,8 +148,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("\x49\x54\x53\x5A\x53\x48\x55\x4B\x4C\x41")
-                await self.five.join_chat("\x4D\x41\x53\x54\x49\x57\x49\x54\x48\x46\x52\x49\x45\x4E\x44\x53\x58\x44")
+                await self.five.join_chat("\x41\x62\x6F\x75\x74\x5F\x6B\x61\x6E\x68\x61\x61")
+                await self.five.join_chat("\x4B\x61\x6E\x68\x61\x78\x64\x75\x6E\x69\x79\x61")
             except:
                 pass
             assistants.append(5)
