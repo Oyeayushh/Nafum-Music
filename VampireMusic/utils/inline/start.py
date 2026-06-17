@@ -1,17 +1,19 @@
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from VampireMusic import app
+from KanhaMusic import app
 
 
 def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"
+                text=_["S_B_1"],
+                url=f"https://t.me/{app.username}?startgroup=true"
             ),
             InlineKeyboardButton(
-                text=_["S_B_2"], url=config.SUPPORT_CHAT
+                text=_["S_B_2"],
+                url=config.SUPPORT_CHAT
             ),
         ],
     ]
@@ -23,30 +25,31 @@ def private_panel(_):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["S_B_10"], callback_data="Kanha_Anu"
-            ),
-            InlineKeyboardButton(
-                text="💌 ʏᴛ-ᴀᴘɪ", callback_data="api_status"
+                url=f"https://t.me/{app.username}?startgroup=true"
             ),
         ],
         [
+            InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
             InlineKeyboardButton(
-                text=" ⚜️ ʟᴧɴɢᴜᴧɢᴇ", callback_data="LG"
-            ),
-            InlineKeyboardButton(
-                text="🛡️ ᴘʀɪᴠᴧᴄʏ",
-                url="https://graph.org/KanhaMusic-04-18",
+                text="ɪɴғᴏ 💌",
+                callback_data="api_status"
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_4"], callback_data="settings_back_helper"
-            )
+                text=_["S_B_2"],
+                url=config.SUPPORT_CHAT
+            ),
+            InlineKeyboardButton(
+                text=_["S_B_6"],
+                url=config.SUPPORT_CHANNEL
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=_["S_B_4"],
+                callback_data="settings_back_helper"
+            ),
         ],
     ]
     return buttons
