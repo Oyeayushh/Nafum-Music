@@ -154,9 +154,11 @@ async def gib_repo_callback(_, callback_query):
 @app.on_callback_query(filters.regex("^api_status$"))
 async def show_bot_info(c: app, q: CallbackQuery):
     start = time()
-    await asyncio.sleep(0.1)
+    x = await c.send_message(q.message.chat.id, "ᴘɪɴɢ ᴘᴏɴɢ 💘..")
     delta_ping = time() - start
-    txt = f"""💌 ʏᴏᴜᴛᴜʙᴇ ᴀᴘɪ sᴛᴀᴛᴜs...
+    await x.delete()
+
+    txt = f"""📼 ᴘɪɴɢ ᴘᴏɴɢ ʙᴀʙʏ...
 
 • ᴅᴀᴛᴀʙᴀsᴇ: ᴏɴʟɪɴᴇ
 • ʏᴏᴜᴛᴜʙᴇ ᴀᴘɪ: ʀᴇsᴘᴏɴsɪᴠᴇ
@@ -164,35 +166,34 @@ async def show_bot_info(c: app, q: CallbackQuery):
 • ʀᴇsᴘᴏɴsᴇ ᴛɪᴍᴇ: ᴏᴘᴛɪᴍᴀʟ
 • ᴀᴘɪ ᴘɪɴɢ: {delta_ping * 1000:.3f} ms   
 
-ᴇᴠᴇʀʏᴛʜɪɴɢ ʟᴏᴏᴋs ɢᴏᴏᴅ!
+• ᴇᴠᴇʀʏᴛʜɪɴɢ ʟᴏᴏᴋs ɢᴏᴏᴅ!
 """
     await q.answer(txt, show_alert=True)
 
-@app.on_callback_query(filters.regex("shiv_Vampire") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("Kanha_Anu") & ~BANNED_USERS)
 @languageCB
 async def support(client, CallbackQuery, _):
     await CallbackQuery.edit_message_text(
-        text="**💌 ʜᴇʀᴇ ᴀʀᴇ ꜱᴏᴍᴇ ɪᴍᴘᴏʀᴛᴀɴᴛ ʟɪɴᴋꜱ.**\n**ᴊᴏɪɴ ᴘʟᴇᴀsᴇ...💞**",
+        _["ABOUT_1"].format(app.mention),
         reply_markup=InlineKeyboardMarkup(
             [
-                [
+                [          
                     InlineKeyboardButton(
-                        text="⌯ ᴏᴡɴᴇʀ ⌯", user_id=config.OWNER_ID
-                    ),
-
+                        text=" σᴡηєʀ ", user_id=config.OWNER_ID
+                    )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⌯ sᴜᴘᴘᴏʀᴛ ⌯", url=config.SUPPORT_CHAT
+                        text="sυᴘᴘσʀᴛ", url=config.SUPPORT_CHAT
                     ),
                     InlineKeyboardButton(
-                        text="⌯ ᴜᴘᴅᴀᴛᴇs ⌯", url=config.SUPPORT_CHANNEL
+                        text="υᴘᴅᴧᴛєs", url=config.SUPPORT_CHANNEL
                     ),
 
                 ],
                 [          
                     InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                        text="ʙᴧᴄᴋ", callback_data=f"settingsback_helper"
                     )
                 ],
             ]
