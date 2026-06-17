@@ -64,7 +64,7 @@ async def get_thumb(videoid: str, player_username: str = None) -> str:
     except:
         return YOUTUBE_IMG_URL
 
-    
+
     bg = Image.open(thumb_path).resize((1280, 720)).convert("RGB")
     bg = bg.filter(ImageFilter.GaussianBlur(30)).convert("RGBA")
     overlay = Image.new("RGBA", (1280, 720), (255, 255, 255, 40))
@@ -129,7 +129,7 @@ async def get_thumb(videoid: str, player_username: str = None) -> str:
         spacing=10,
         font=meta_font
     )
-    
+
     bar_y = title_y + 240
     bar_w = 390
 
@@ -144,10 +144,6 @@ async def get_thumb(videoid: str, player_username: str = None) -> str:
         8,
         fill=(0, 0, 0)
     )
-
-    brand = "DEV :- @Nafumusicbot"
-    w = tag_font.getlength(brand)
-    draw.text((1280 - w - 50, 680), brand, fill=(0, 0, 0), font=tag_font)
 
     try:
         os.remove(thumb_path)
